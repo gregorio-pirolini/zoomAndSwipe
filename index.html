@@ -56,11 +56,38 @@
     <link rel="stylesheet" href="scss/sass.css" />
     <!-- sass -->
     <!-- js -->
-    <script src="js/script"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
     <!-- js -->
   </head>
   <body>
     <p>this is a page to test swipe and zoom on pictures</p>
-    
+    <div class="photogallerie">
+      <h2 class="gallerieName">Gallerie Name</h2>
+      <ul class="controlSmall">
+        <li class="previousSmall"><img src="pix/arrowMinus.png" /></li>
+        <li class="nextSmall"><img src="pix/arrowPlus.png" /></li>
+      </ul>
+
+      <div class="theDisplay">
+        <div class="previousBig">previousBig</div>
+        <figure class="thePhotos">
+          <div class="pix actualPix">
+            <img src="img/Buch-32.jpg" />
+          </div>
+          <div class="pix nextPix"><img src="img/lines.jpg" /></div>
+          <div class="pix previousPix"><img src="img/uzumaki.jpg" /></div>
+        </figure>
+        <div class="nextBig">nextBig</div>
+      </div>
+
+      <div class="gallerieInfo">
+        <div class="numberOfThisPix">x</div>
+        <div class="divider">/</div>
+        <div class="numberOfAllPix">x</div>
+        <div class="nameOfPix">name of pix</div>
+      </div>
+    </div>
   </body>
 </html>

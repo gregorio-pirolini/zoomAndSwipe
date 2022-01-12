@@ -1,4 +1,88 @@
 body {
   background-color: aquamarine;
 }
+.actualPix {
+  z-index: 3;
+}
+
+.nextPix {
+  z-index: 2;
+}
+
+.previousPix {
+  z-index: 1;
+}
+
+.pix {
+  position: absolute;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.pix img {
+  display: block;
+}
+
+.controlSmall {
+  background-color: aqua;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.controlSmall li {
+  margin-left: 10px;
+  float: left;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* <---- NEW    */
+  background: silver;
+  border: 1px solid black;
+}
+
+.controlSmall li img {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+}
+
+.thePhotos {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+}
+
+.thePhotos img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 100%;
+  width: auto;
+  vertical-align: middle;
+}
 /*# sourceMappingURL=sass.css.map */

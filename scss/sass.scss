@@ -1,3 +1,63 @@
 body {
   background-color: aquamarine;
 }
+/*# sourceMappingURL=sass.css.map */
+.actualPix {
+  z-index: 3;
+}
+.nextPix {
+  z-index: 2;
+}
+.previousPix {
+  z-index: 1;
+}
+.pix {
+  position: absolute;
+  height: inherit;
+  display: flex;
+  flex: 1 0 auto;
+  img {
+    display: block;
+  }
+}
+
+.controlSmall {
+  background-color: aqua;
+  list-style-type: none;
+  display: inline-block;
+
+  li {
+    margin-left: 10px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* <---- NEW    */
+    background: silver;
+    border: 1px solid black;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+img {
+  max-width: 100%;
+}
+.thePhotos {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  img {
+    object-fit: contain;
+    max-height: 100%;
+    width: auto;
+    vertical-align: middle;
+  }
+}
